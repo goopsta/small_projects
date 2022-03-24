@@ -1,7 +1,7 @@
 -- thank you yo Joeengo on v3rm for making the crasher! im just making it chat and hop.
 
 local chatTable = {
-  "為大戟 CRASHING SERVER 我的家啊大家啊收到"，
+  "為大戟 CRASHING SERVER 我的家啊大家啊收到"
   "爲隊伍啊的 GOOPY.CLUB ON TOP! 地挖苦巨大的",
 }
 
@@ -32,6 +32,6 @@ local x = {}
 
 game:GetService("Players").LocalPlayer.OnTeleport:Connect(function(State)
     if State == Enum.TeleportState.Started then
-        syn.queue_on_teleport('loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/goopsta/small_projects/main/weaponware_crasher_hop.lua"))()')
+        syn.queue_on_teleport("")
     end
 end)
